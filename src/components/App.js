@@ -1,11 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Header from './Header';
+import Home from './Home';
+import About from './About';
 
 const App = () => (
-    <div>
-        <h1>React router v4</h1>
-
-        <img src='https://raw.githubusercontent.com/webpack-contrib/awesome-webpack/master/media/awesome_webpack_branding.png'/>
-    </div>
+    <Router>
+        <div>
+            <Header />
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route path='/about' component={About}/>
+            </Switch>
+        </div>
+    </Router>
 );
 
 export default App;
