@@ -1,10 +1,13 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Header = () => (
     <nav>
-        <a>Lien 1</a>
-        <a>Lien 2</a>
-        <a>Lien 3</a>
+        <NavLink exact to='/' activeStyle={{background: 'blue'}}>Home</NavLink>
+        <br />
+        <NavLink to='/about' activeClassName='newActiveStyle'>About</NavLink>
+        <br />
+        <NavLink to='/contact'>Contact</NavLink>
     </nav>
 )
 

@@ -1,4 +1,6 @@
 $background: #EC407A;
+$activeColor: white;
+$newActiveStyleColor: green;
 
 body {
     background: $background;
@@ -6,4 +8,13 @@ body {
 
 img {
     width: 50%;
+}
+
+nav {
+    .active {
+        color: $activeColor;
+    }
+    .newActiveStyle {
+        background: $newActiveStyleColor;
+    }
 }

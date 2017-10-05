@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
+import Contact from './Contact';
 
 const App = () => (
     <Router>
@@ -11,6 +12,7 @@ const App = () => (
             <Switch>
                 <Route exact path='/' component={Home}/>
                 <Route path='/about' component={About}/>
+                <Route path='/contact' render={ () => <Contact title='Contactez moi'/> }/>
             </Switch>
         </div>
     </Router>
