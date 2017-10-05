@@ -5,6 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Courses from './Courses';
+import NotFound from './NotFound';
 
 const App = () => (
     <Router>
@@ -15,6 +16,7 @@ const App = () => (
                 <Route path='/about' component={About}/>
                 <Route path='/courses' component={Courses}/>
                 <Route path='/contact' render={ () => <Contact title='Contactez moi'/> }/>
+                <Route component={NotFound}/>
             </Switch>
         </div>
     </Router>
