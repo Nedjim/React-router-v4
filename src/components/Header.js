@@ -7,6 +7,8 @@ const Header = () => (
         <br />
         <NavLink to='/about' activeClassName='newActiveStyle'>About</NavLink>
         <br />
+        <NavLink to='/teachers'>Teachers</NavLink>
+        <br />
         <NavLink to='/courses'>Courses</NavLink>
         <br />
         <NavLink to='/contact'>Contact</NavLink>
