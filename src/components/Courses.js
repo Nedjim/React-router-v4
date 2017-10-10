@@ -7,7 +7,7 @@ import NotFound from './NotFound';
 
 const Courses = ({match}) => (
     <div>
-        <h1>Courses</h1>
+        <h3>Courses</h3>
         <nav>
             <NavLink to={`${match.url}/course1`}>Course 1</NavLink>
             <NavLink to={`${match.url}/course2`}>Course 2</NavLink>

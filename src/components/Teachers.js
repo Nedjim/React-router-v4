@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Teachers = () => <h1>Teachers page! </h1>
+const Teachers = () => <h1>Teachers </h1>
 
 export default Teachers;

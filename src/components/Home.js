@@ -15,12 +15,16 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <h2>Welcome to Home component !</h2>
-                <h3>Featured list: </h3>
-                <Link to='teachers/Dota/Zauguidou'>Zauguidou</Link>
+                <h1>Home</h1>
+                <h3>Favorites: </h3>
+                <Link to='teachers/Dota/Zauguidou'>Mister-Z</Link>
                 
+                <h3>Search: </h3>
                 <form onSubmit={this.handleSubmit.bind(this)}>
+                    <label>Name: </label>
                     <input type='text' ref={ (input) => this.name = input} />
+
+                    <label>Topic: </label>
                     <input type='text' ref={ (input) => this.topic = input} />
                     <input type='submit'/>
                 </form>

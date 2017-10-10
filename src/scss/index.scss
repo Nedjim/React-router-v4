@@ -4,17 +4,29 @@ $newActiveStyleColor: green;
 
 body {
     background: $background;
-}
-
-img {
-    width: 50%;
-}
-
-nav {
-    .active {
-        color: $activeColor;
+    font-size: 16px;
+    h1 {
+        text-align: center;
     }
-    .newActiveStyle {
-        background: $newActiveStyleColor;
+
+    img {
+        width: 50%;
+    }
+    
+    nav {
+        .active {
+            color: $activeColor;
+        }
+        .newActiveStyle {
+            background: $newActiveStyleColor;
+        }
+        li {
+            list-style-type:  none;
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+    a {
+        text-decoration: none;
     }
 }
